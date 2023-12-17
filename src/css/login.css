@@ -5,12 +5,15 @@
 
 }
 body{
-    background-image: image-set(url(../img/home.jpg));
+    background-image: image-set(url(../img/login.jpg));
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+#loginForm{
+    color: aliceblue;
 }
 section{
 display: flex;
@@ -22,14 +25,13 @@ flex-direction: column;
 padding: 1em;
 
 }
-section h1{
-    font-size: 3em;
-}
+
 section h2{
     text-align: center;
     width: 100%;
     margin-bottom: 1em;
     font-size: 2.5em;
+    color: white;
 }
 
 section form{
@@ -38,8 +40,6 @@ section form{
     flex-wrap: wrap;
     max-width: 500px;
     border-radius: 20px;
-    border: 2px solid black;
-
 }
 section form label{
     width: 100%;
@@ -49,11 +49,10 @@ section form label{
 section form input{
     width: 100%;
     margin-bottom: 1em;
-    padding: 0.5em;
+    padding: 0.8em;
     border-radius: 9px;
     border: none;
-    outline-color: rgb(70, 70, 243);
-    background-color: white;
+    background-color: rgb(163, 160, 160);
     
 }
 section form input[ type='submit']{
@@ -67,19 +66,12 @@ section form input[ type='submit']:active{
 }
 section p{
     margin-top: 1.5em;
+    color: white;
 }
 section p a{
     text-decoration: none;
-    color: blue;
+    color: rgb(255, 255, 255);
 }
 
 /*home*/
-section button{
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 9px;
-    margin-top: 1.5em;
-    font-size: 1em;
-}
+

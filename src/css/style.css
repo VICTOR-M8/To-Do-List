@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: image-set(url(../img/home\ \(2\).jpg));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    font-size: 50px;
+    color: #fff;
+    font-family: Ink Free;
+    word-wrap: break-word
+
+    
+}
+
+h2 {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn {
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    height: 20%;
+    margin-top: 200px;
+
+}
+
+.btn_login {
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    height: 20%;
+    margin-top: 250px;
+
+}
+
+.btn_sign {
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    height: 10%;
+    margin-top: 0px;
+
+}
+
+
+button {
+    width: 200px;
+    height: 48px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 9px;
+    border: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    background: #07012F;
+    transition: 0.1s;
+    box-shadow: 5px 9px 21.399999618530273px 14px rgba(255, 255, 255, 0.25);
+}
+
+button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.btn_login button,
+.btn_sign button {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn_login button:hover,
+.btn_sign button:hover {
+    transform: scale(1.1);
+}
+
+
+/* button:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+    transition: 0.5s;
+} */
