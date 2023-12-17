@@ -9,7 +9,9 @@ const loginForm = document.querySelector('#loginForm');
                 alert('Usuario y/o contraseña incorrectos');
             } else {
                 alert(`¡Bienvenido ${validUser.name}!`);
-                // Redirect to index.html
+
+                localStorage.setItem('usuario', JSON.stringify(validUser));
+                
                 window.location.href = 'home.html';
 
             }

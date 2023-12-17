@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/home.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>HOLA</h1>
+    <div class="container">
+        <div class="perfil">
+            <div id="fecha"></div>
+            <h1>Tareas del dia </h1>
+            <div id="infoUsuario">
+                <p id="saludo">¡Hola, Usuario!</p>
+                <button id="logoutButton">Cerrar sesión</button>
+            </div>
+        </div>
+
+    <div class="cards">
+        <div class="card dia">
+            <p class="tip">Mi dia</p>
+        </div>
+        <div class="card importante">
+            <p class="tip">Importante</p>
+        </div>
+        <div class="card hogar">
+            <p class="tip">Hogar</p>
+        </div>
+        <div class="card educacion">
+            <p class="tip">Educacion</p>
+            
+        </div>
+    </div>
+    <script src="/src/js/home.js"></script>
 </body>
+
 </html>
