@@ -23,6 +23,9 @@ body {
     font-family: 'Prompt', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
 
 /* NAVBAR */
 

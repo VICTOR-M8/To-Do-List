@@ -18,8 +18,8 @@ fecha.innerHTML = FECHA.toLocaleDateString('es-es', { weekday: 'long', month: 's
 
 
 
-// Lógica para editar una tarea al hacer clic en "Editar"
-// Función para habilitar la edición de las tareas al presionar "Editar"
+
+// presionar "Editar"
 function habilitarEdicion() {
     const tasks = document.querySelectorAll('#lista li .text');
 
@@ -151,14 +151,10 @@ function tareaRealizada(element) {
     element.classList.toggle(uncheck)
     element.parentNode.querySelector('.text').classList.toggle(lineThrough)
     LIST[element.id].realizado = LIST[element.id].realizado ? false : true //Si
-    // console.log(LIST)
-    // console.log(LIST[element.id])
-    // console.log(LIST[element.id].realizado)
+
 }
 
 function tareaEliminada(element) {
-    // console.log(element.parentNode)
-    // console.log(element.parentNode.parentNode)
     element.parentNode.parentNode.removeChild(element.parentNode)
     LIST[element.id].eliminado = true
     console.log(LIST)
