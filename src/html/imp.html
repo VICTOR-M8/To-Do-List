@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/src/css/imp.css">
+    <title>IMPORTANTE</title>
+</head>
+
+<body>
+    <div class="home">
+        <a href="/src/html/home.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+    </div>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn" id="dropdownBtn"><i class="fas fa-bars"></i></button>
+            <div class="dropdown-content">
+                <a href="#" id="editTask">Editar</a>
+                <a href="#" id="sortTasks">Ordenar</a>
+                <a href="#" id="reorderTasks">Reordenar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="perfil">
+            <div id="fecha"></div>
+            <h1>Tareas importante </h1>
+        </div>
+
+
+        <div class="container_tarea">
+            
+
+            <div class="agregar-tarea">
+                <input type="text" id="input" placeholder="agregar una tarea">
+                <i id="boton-enter" class="fas fa-plus-circle"></i>
+            </div>
+        </div>
+
+        <div class="seccion-tarea">
+        
+            <ul id="lista">
+
+            </ul>
+            
+
+        </div>
+    </div>
+    <script src="/src/js/imp.js"></script>
+</body>
+
+</html>
+
+

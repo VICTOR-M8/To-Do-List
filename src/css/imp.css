@@ -15,7 +15,7 @@
 }
 
 body {
-    background-image: url('../img/tareas.jpg');
+    background-image: url('../img/importante.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -200,6 +200,14 @@ body {
 
 .agregar-tarea i:hover {
     transform: scale(1.1);
+    cursor: pointer;
+}
+.home{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: var(--white);
+    font-size: 20px;
     cursor: pointer;
 }
 

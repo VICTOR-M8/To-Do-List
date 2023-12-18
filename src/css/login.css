@@ -75,3 +75,15 @@ section p a{
 
 /*home*/
 
+.icon-home{
+    font-family: 'Material Icons Outlined';
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    font-size: 2.5em;
+    color: white;
+}
+
