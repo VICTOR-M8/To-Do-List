@@ -116,7 +116,7 @@ function getDragAfterElement(list, y) {
 // funcion de agregar tarea 
 
 function agregarTarea(tarea, id, realizado, eliminado) {
-    if (eliminado) { return } // si existe eliminado es true si no es false 
+    if (eliminado) { return } 
 
     const REALIZADO = realizado ? check : uncheck // si realizado es verdadero check si no uncheck
 
