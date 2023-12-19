@@ -109,7 +109,7 @@ function getDragAfterElement(list, y) {
     }, { offset: Number.NEGATIVE_INFINITY }).element;
 }
 
-// ... tu código actual ...
+
 
 
 

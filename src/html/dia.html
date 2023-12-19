@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +15,10 @@
 
 <body>
     <div class="home">
-    <a href="/src/html/home.html" class="back-link">
-        <i class="fas fa-arrow-left"></i>
-    </a>
-</div>
+        <a href="/src/html/home.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+    </div>
     <div class="navbar">
         <div class="dropdown">
             <button class="dropbtn" id="dropdownBtn"><i class="fas fa-bars"></i></button>
@@ -26,7 +26,7 @@
                 <a href="#" id="editTask">Editar</a>
                 <a href="#" id="sortTasks">Ordenar</a>
                 <a href="#" id="reorderTasks">Reordenar</a>
-    
+
             </div>
         </div>
     </div>
@@ -39,26 +39,32 @@
 
 
         <div class="container_tarea">
-            
+
 
             <div class="agregar-tarea">
                 <input type="text" id="input" placeholder="agregar una tarea">
-                <i id="boton-enter" class="fas fa-plus-circle"></i>
+                <i id="boton-enter" class="fas fa-plus"></i>
+            </div>
+            <div class="radio-input">
+                <input class="input yellow" type="radio" name="radio" />
+                <input checked="" class="input green" type="radio" name="radio" />
+                <input class="input red" type="radio" name="radio" />
             </div>
         </div>
 
         <div class="seccion-tarea">
-        
+
             <ul id="lista">
 
             </ul>
-            
+
 
         </div>
+    
     </div>
+    
+
     <script src="/src/js/dia.js"></script>
 </body>
 
 </html>
-
-
