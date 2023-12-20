@@ -5,60 +5,71 @@
 }
 
 body {
-    background-image: image-set(url(../img/home\ \(2\).jpg));
-    background-size: cover;
-    background-repeat: no-repeat;
+
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/d-home.jpg);
+
 }
 
-h1 {
+.titulos {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    gap: 10px;
+    flex-direction: column;
+    top: 105px;
     margin: 10px;
-    display: grid;
-    justify-content: center;
-    align-items: end;
-    font-size: 50px;
     color: #fff;
-    font-family: Ink Free;
-    word-wrap: break-word
+    font-family: Inter;
+    font-size: 28px;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
 
-    
+
 }
 
-h2 {
-    margin: 10px;
+
+
+.btn {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-.btn {
-    display: grid;
-    align-items: end;
-    justify-content: center;
-    height: 20%;
-    margin-top: 200px;
+    margin: 322px;
+    margin-left: 8px;
+    margin-right: 0px;
 
 }
 
 .btn_login {
-    display: grid;
-    align-items: end;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    height: 20%;
-    margin-top: 250px;
+    margin: 10px;
+    gap: 10px;
+
 
 }
 
 .btn_sign {
-    display: grid;
-    align-items: end;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    height: 10%;
-    margin-top: 0px;
-
+    margin: 10px;
+    gap: 10px;
 }
+
+
 
 
 button {
@@ -90,6 +101,7 @@ button::after {
     left: 0;
     top: 0;
 }
+
 .btn_login button,
 .btn_sign button {
     transition: transform 0.3s ease-in-out;
@@ -106,3 +118,23 @@ button::after {
     background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
     transition: 0.5s;
 } */
+
+/* Tu CSS existente... */
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 390px) {
+
+    .btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 251px;
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+}

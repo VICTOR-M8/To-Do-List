@@ -1,18 +1,14 @@
 
-function cerrarSesion() {
-    localStorage.removeItem('usuario'); // Eliminar la información del usuario al cerrar sesión
-    window.location.href = 'login.html'; // Redirigir a la página de inicio de sesión
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-    mostrarSaludo();
-    mostrarFecha();
-
     // Agregar evento al botón de cierre de sesión
     const logoutButton = document.getElementById('logoutButton');
     logoutButton.addEventListener('click', cerrarSesion);
 });
 
+function cerrarSesion() {
+    localStorage.removeItem('usuario'); // Eliminar la información del usuario al cerrar sesión
+    window.location.href = 'login.html'; // Redireccionar a la página de login
+}
 
 const cards = document.querySelectorAll('.card');
 

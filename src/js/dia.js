@@ -8,9 +8,8 @@ const uncheck = 'fa-circle'
 const lineThrough = 'line-through'
 let LIST
 
-let id // para que inicie en 0 cada tarea tendra un id diferente
+let id = 0
 
-//creacion de fecha actualizada 
 
 const FECHA = new Date()
 fecha.innerHTML = FECHA.toLocaleDateString('es-es', { weekday: 'long', month: 'short', day: 'numeric' })

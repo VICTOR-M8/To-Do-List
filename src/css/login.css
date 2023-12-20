@@ -1,32 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 }
-body{
-    background-image: image-set(url(../img/login.jpg));
-    background-size: cover;
-    background-repeat: no-repeat;
+
+body {
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/D-LOGIN.jpg);
 }
-#loginForm{
+
+#loginForm {
     color: aliceblue;
 }
-section{
-display: flex;
-flex-wrap:wrap ;
-height: 100vh;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-padding: 1em;
+
+
+
+section {
+    background-color: rgba(217, 217, 217, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    width: 300px;
+    height: 350px;
+    border-radius: 29px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 
 }
 
-section h2{
+h2 {
     text-align: center;
     width: 100%;
     margin-bottom: 1em;
@@ -34,48 +49,55 @@ section h2{
     color: white;
 }
 
-section form{
+section form {
     padding: 1.5em;
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
     border-radius: 20px;
 }
-section form label{
+
+section form label {
     width: 100%;
     padding: 0.2em;
     margin-bottom: 0.5em;
 }
-section form input{
+
+section form input {
     width: 100%;
     margin-bottom: 1em;
     padding: 0.8em;
     border-radius: 9px;
     border: none;
     background-color: rgb(163, 160, 160);
-    
+
 }
-section form input[ type='submit']{
+
+section form input[ type='submit'] {
     margin-top: 1.5em;
     background-color: blue;
     color: white;
-    
+
 }
-section form input[ type='submit']:active{
+
+section form input[ type='submit']:active {
     transform: scale(0.98);
 }
-section p{
-    margin-top: 1.5em;
+
+section p {
+    
+    margin-top: -4em;
     color: white;
 }
-section p a{
-    text-decoration: none;
+
+section p a {
+
     color: rgb(255, 255, 255);
 }
 
 /*home*/
 
-.icon-home{
+.icon-home {
     font-family: 'Material Icons Outlined';
     width: 100%;
     margin-bottom: 1em;
@@ -87,3 +109,8 @@ section p a{
     color: white;
 }
 
+@media only screen and (max-width: 480px) {
+    img {
+        width: 100%;
+    }
+}

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root {
-    --grey: #5e5e60;
+    --black: #030303;
     --white: #fafafb;
     --purple: #9a67ea;
     --blue-light: #04d4c3;
@@ -14,11 +14,18 @@
 }
 
 body {
-    background-image: image-set(url(../img/tareas.jpg));
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-image: url(../img/d-home.jpg);
+    }
+    
+
 
 .cards {
 
@@ -56,7 +63,8 @@ body {
     height: 60px;
     width: 284px;
     border-radius: 9px;
-    color: rgb(0, 0, 0);
+    color: var(--purple);
+    box-shadow: inset 0 0 10px 0 var(--black);
     cursor: pointer;
     transition: 400ms;
 }
