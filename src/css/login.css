@@ -58,6 +58,7 @@ section form {
 }
 
 section form label {
+    color: white;
     width: 100%;
     padding: 0.2em;
     margin-bottom: 0.5em;
@@ -75,7 +76,7 @@ section form input {
 
 section form input[ type='submit'] {
     margin-top: 1.5em;
-    background-color: blue;
+    background-color: rgb(230, 9, 90);
     color: white;
 
 }

@@ -7,18 +7,22 @@
 :root {
     --grey: #afafb5;
     --white: #fafafb;
-    --DarkMagenta: #8B008B;
+    --purple: #9a67ea;
+    --blue-light: #d404b5;
     --blue-dark: #2a73c2;
-
+    --green: #2c7b90;
 
 }
 
 body {
-    background-image: url('../img/importante.jpg');
+    overflow: hidden;
+    background-image: url('../img/impo.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 100vh;
-    font-family: 'Prompt', sans-serif;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -28,29 +32,28 @@ body {
 /* NAVBAR */
 
 .navbar {
-
     display: flex;
     justify-content: flex-end;
-    padding: 15px;
+    
 }
 
 .dropdown {
 
-    font-size: 15px;
-    padding: 10px;
+    font-size: 10px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 25px;
     position: relative;
     display: inline-block;
+    
 
 }
 
 .dropdown button {
     background: none;
-    color: var(--DarkMagenta);
-    font-size: 20px;
+    color: var(--white);
+    font-size: 10px;
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -71,11 +74,13 @@ body {
 
 .dropdown-content {
     display: none;
+    flex-direction: row;
+    gap: 1px;
+    padding: 5px;
     position: absolute;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    right: 0;
+    min-width: 50px;
+    top:0;
+    right: calc(100% + 1px);
 }
 
 .dropdown-content a {
@@ -83,16 +88,18 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    
 }
 
 .dropdown-content a:hover {
-    background-color: var(--DarkMagenta);
+    background-color: var(--blue-light);
     opacity: calc(0.5);
     border-radius: 20px;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    
 }
 
 
@@ -100,13 +107,18 @@ body {
 
 .perfil h1 {
     color: var(--white);
-    
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+
 }
 
 #fecha {
     color: var(--white);
     padding: 0px 0 5px 0px;
-    
+    position: relative;
+    text-align: center;
+
 }
 
 .titulo_h3 {
@@ -144,23 +156,17 @@ body {
     border-radius: 8px;
     padding: 2px;
     color: var(--white);
-    margin: 2px 0;
+    margin: 5px 0;
 
 }
 
 .seccion-tarea i {
-    color: var(--DarkMagenta);
+    color: var(--blue-light);
     font-size: 15px;
     margin: 7px;
 }
 
-.seccion-tarea>ul p {
-    text-decoration-line: var(--green);
-    
 
-    font-size: 1.2rem;
-
-}
 
 .seccion-tarea i:hover {
     color: var(--purple);
@@ -168,26 +174,30 @@ body {
 }
 
 .line-through {
-    color: var(--DarkMagenta);
+    color: var(--blue-light);
 }
 
 .container {
-    max-width: 80%;
-    width: 400px;
-    height: 600px;
+    display: flex;
+    max-width: 60%;
     margin: 0 auto;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 
 
 /*AGREGAR TAREA*/
 .container_tarea {
-    position: absolute;
+    width: 50%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     top: 570px;
+    
+    
 
 }
 
@@ -195,25 +205,28 @@ body {
 .agregar-tarea {
     background-color: var(--white);
     border-radius: 8px;
-    width: 323px;
-    height: 40px;
-    display: flex;
-    align-items: center;
+    height: 33px;
+    top: 746px;
+    left: 35px;
     flex-direction: row-reverse;
+    margin: 10px 0;
     gap: 23px;
     padding: 10px;
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .agregar-tarea input {
-    color: var(--DarkMagenta);
-    width: 100%;
+    color: #d404b5;
+    
     height: 100%;
     border-radius: 8px;
     border: none;
     outline: none;
-    padding-left: 34px;
     
+
 
 }
 
@@ -230,7 +243,7 @@ body {
 }
 
 .agregar-tarea i:hover {
-    color: var(--DarkMagenta);
+    color: var(--blue-light);
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -238,7 +251,7 @@ body {
 .home {
 
     position: absolute;
-    top: 30px;
+    top: -1px;
     left: 40px;
     color: var(--white);
     font-size: 20px;
@@ -246,10 +259,15 @@ body {
 }
 
 .fa-arrow-left {
-    font-size: 30px;
-    color: var(--DarkMagenta);
+
+    padding: 10px;
+    padding: 0 0 0 10px;
+    margin: 0;
+    font-size: 25px;
+    color: var(--white);
 }
-/* 
+
+
 .radio-input{
     display: flex;
     align-items: center;
@@ -325,4 +343,25 @@ body {
 .input:checked~.input:active {
     background-position: -24px 0;
 }
- */
+
+
+@media screen and (min-width: 420px) {
+    .dropdown-content {
+        display: flex !important; 
+        position: static; 
+        min-width: auto; 
+        box-shadow: none; 
+        font-size: 16px;
+    }
+
+    .dropdown button i {
+        
+            display: none; 
+        }
+
+}
+
+
+
+
+

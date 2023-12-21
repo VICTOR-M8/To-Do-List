@@ -1,4 +1,9 @@
 
+const FECHA = new Date()
+fecha.innerHTML = FECHA.toLocaleDateString('es-es', { weekday: 'long', month: 'short', day: 'numeric' })
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Agregar evento al botón de cierre de sesión
     const logoutButton = document.getElementById('logoutButton');

@@ -119,9 +119,9 @@ button::after {
     transition: 0.5s;
 } */
 
-/* Tu CSS existente... */
 
-/* Media query para dispositivos móviles */
+
+
 @media screen and (max-width: 390px) {
 
     .btn {
