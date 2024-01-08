@@ -2,8 +2,9 @@
 const loginButton = document.getElementById('loginButton');
 const signupButton = document.getElementById('signupButton');
 
+
 loginButton.addEventListener('click', () => {
-    window.location.href = '/src/html/login.html'; 
+    window.location.href = '/src/html/login.html';
 });
 
 signupButton.addEventListener('click', () => {
