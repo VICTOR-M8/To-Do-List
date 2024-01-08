@@ -3,17 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="/src/css/imp.css">
+
     <title>IMPORTANTE</title>
 </head>
 
 <body>
+
+
+    <div class="image-dropdown">
+        <button class="dropdown-btn">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <img src="/src/img/prueba1.jpg" alt="Imagen 1" data-bg="/src/img/prueba1.jpg">
+            <img src="/src/img/prueba2.jpg" alt="Imagen 2" data-bg="/src/img/prueba2.jpg">
+            <img src="/src/img/d-home.jpg" alt="Imagen 1" data-bg="/src/img/d-home.jpg">
+            <img src="/src/img/dia.jpg" alt="Imagen 2" data-bg="/src/img/dia.jpg">
+            <img src="/src/img/hogar.jpg" alt="Imagen 1" data-bg="/src/img/hogar.jpg">
+            <img src="/src/img/impo.jpg" alt="Imagen 2" data-bg="/src/img/impo.jpg">
+            <img src="/src/img/D-LOGIN.jpg" alt="Imagen 1" data-bg="/src/img/D-LOGIN.jpg">
+        </div>
+    </div>
+
     <div class="home">
         <a href="/src/html/home.html" class="back-link">
             <i class="fas fa-arrow-left" style="margin-top: 20px;"></i>
@@ -38,7 +56,7 @@
 
 
         <div class="container_tarea">
-            
+
 
             <div class="agregar-tarea">
                 <input type="text" id="input" placeholder="agregar una tarea">
@@ -52,17 +70,16 @@
         </div>
 
         <div class="seccion-tarea">
-        
+
             <ul id="lista">
 
             </ul>
-            
+
 
         </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/src/js/imp.js"></script>
 </body>
 
 </html>
-
-

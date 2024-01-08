@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --black: #030303;
     --white: #fafafb;
@@ -14,32 +15,31 @@
 }
 
 
-    body {
-        overflow: hidden;
-        background-image: url('../img/alberta-2297204_1920.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-        background-attachment: fixed;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
+body {
+    overflow: hidden;
+    background-image: url('../img/alberta-2297204_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 
 .cards {
 
     width: 100%;
-    
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 520px;
     flex-direction: column;
     gap: 30px;
 }
 
 .cards .dia {
+    
     background-color: rgba(217, 217, 217, 0.70);
 }
 
@@ -50,6 +50,7 @@
 .cards .hogar {
     background-color: rgba(217, 217, 217, 0.70);
 }
+
 .cards .educacion {
     background-color: rgba(217, 217, 217, 0.70);
 }
@@ -81,6 +82,8 @@
     transform: scale(1.1, 1.1);
 }
 
+
+
 /*PERFIL*/
 
 .container {
@@ -88,7 +91,18 @@
     width: 400px;
     height: 600px;
     margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(217, 217, 217, 0.70);
+    border-radius: 10px;
+    padding: 20px;
+
+
 }
+
 
 
 
@@ -96,6 +110,42 @@
     color: var(--black);
     padding: 0px 0 5px 0px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+#logoutButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    cursor: pointer;
+
+
+
+
+}
+
+@keyframes animate8345 {
+
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#fecha {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #2d60ec, #3ccfda);
+    font-size: 30px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate8345 9s linear infinite;
+    font-weight: bold;
+}
