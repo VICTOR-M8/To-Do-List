@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url(../img/d-home.jpg);
+    background-image: url(/src/img/d-home.jpg);
 
 }
 
