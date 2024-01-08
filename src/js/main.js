@@ -4,9 +4,9 @@ const signupButton = document.getElementById('signupButton');
 
 // Redirigir a las páginas respectivas al hacer clic
 loginButton.addEventListener('click', () => {
-    window.location.href = 'http://127.0.0.1:5500/src/html/login.html'; // Reemplaza 'ruta_para_login.html' con la ruta correcta de tu página de inicio de sesión
+    window.location.href = '/src/html/login.html';  
 });
 
 signupButton.addEventListener('click', () => {
-    window.location.href = 'http://127.0.0.1:5500/src/html/sign-up.html'; // Reemplaza 'ruta_para_registro.html' con la ruta correcta de tu página de registro
+    window.location.href = '/src/html/sign-up.html'; 
 });
